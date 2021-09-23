@@ -17,5 +17,3 @@ print("Ngày sinh:", birthdate)
 print("Điểm thi:", daily_score)
 print("Điểm quá trình:", score)
 print("Điểm tổng kết", str((score +daily_score)/2))
-
-

@@ -11,6 +11,7 @@ if random.randint(1,99) == 1:
 else: 
     "PXU" + sbd
     
+print("Họ và tên:", fullname)
 print("Mã sv:", str(sbd))
 print("Ngày sinh:", birthdate)
 print("Điểm thi:", daily_score)

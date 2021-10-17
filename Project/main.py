@@ -14,10 +14,10 @@ while action >= 0:
 
     print("Vui lòng chọn một chức năng: ")
     print("0. Thoát khỏi chương trình")
-    print("1. Thêm sinh viên")
-    print("2. Xóa sinh viên")
-    print("3. Sửa sinh viên")
-    print("4. Xem danh sách sinh viên")
+    print("1. Thêm mới sản phẩm ")
+    print("2. Xóa sản phẩm")
+    print("3. Cập nhật thông tin sản phẩm")
+    print("4. Xem danh sách tất cả sản phẩm")
     action = int(input("Bạn chọn chức năng? "))
     if action == 0:
         print("Đã thoát chương trình")

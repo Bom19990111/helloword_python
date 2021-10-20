@@ -11,13 +11,19 @@ while action >= 0:
         p.UpdateProduct()
     elif action == 4:
         p.ShowAllProduct()
-
-    print("Vui lòng chọn một chức năng: ")
-    print("0. Thoát khỏi chương trình")
-    print("1. Thêm mới sản phẩm ")
-    print("2. Xóa sản phẩm")
-    print("3. Cập nhật thông tin sản phẩm")
-    print("4. Xem danh sách tất cả sản phẩm")
+    elif action == 5:       
+        p.FindProductByName()
+    elif action == 6:       
+        p.SortProductAsc()
+        
+    print("Vui lòng chọn chức năng bạn muốn: ")
+    print("0. Thoát khỏi chương trình. ")
+    print("1. Thêm mới sản phẩm. ")
+    print("2. Xóa sản phẩm. ")
+    print("3. Cập nhật thông tin sản phẩm. ")
+    print("4. Xem danh sách tất cả sản phẩm. ")
+    print("5. Tìm kiếm sản phẩm theo tên hoặc theo thương hiệu. ")
+    print("6. Sắp xếp tên sản phẩm. ")
     action = int(input("Bạn chọn chức năng? "))
     if action == 0:
         print("Đã thoát chương trình")

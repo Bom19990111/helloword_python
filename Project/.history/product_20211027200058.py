@@ -62,7 +62,7 @@ def AddProduct():
     answer = input("Bạn có muốn nhập tiếp không? Y/N ")
     if answer == "y" or answer == "Y":
         AddProduct()
-    print("********************************")
+        
 
 # Tìm kiếm ID trùng lặp
 def FindProductDuplicate(Id):
@@ -77,15 +77,15 @@ def ShowAllProduct():
     if len(list_product.list_product) == 0 or len(list_product.list_product) < 0:
         print("Chưa có sản phẩm nào để hiển thị! ".upper())
     for i in range(0, len(list_product.list_product)):
-        print("ID           : \t", list_product.list_product[i]['Id']),
-        print("Mã sản phẩm  : \t", list_product.list_product[i]['Product_code']),
-        print("Tên sản phẩm : \t", list_product.list_product[i]['Product_name']),
-        print("Thương hiệu  : \t", list_product.list_product[i]['Brand']),
-        print("Giá          : \t", list_product.list_product[i]['Price']),
-        print("Năm xuất bản : \t", list_product.list_product[i]['Year']),
-        print("Số lượng     : \t", list_product.list_product[i]['Quantity']),
-        print("Size giày    : \t", list_product.list_product[i]['Size'])
-        print("Tình trạng   : \t", list_product.list_product[i]['Status'])
+        print("ID: ", list_product.list_product[i]['Id']),
+        print("Mã sản phẩm: ", list_product.list_product[i]['Product_code']),
+        print("Tên sản phẩm: ", list_product.list_product[i]['Product_name']),
+        print("Thương hiệu: ", list_product.list_product[i]['Brand']),
+        print("Giá: ", list_product.list_product[i]['Price']),
+        print("Năm xuất bản: ", list_product.list_product[i]['Year']),
+        print("Số lượng: ", list_product.list_product[i]['Quantity']),
+        print("Size giày: ", list_product.list_product[i]['Size'])
+        print("Tình trạng: ", list_product.list_product[i]['Status'])
         print("________________________________")
 
 # Sửa thông tin sản phẩm
@@ -96,7 +96,6 @@ def UpdateProduct():
     product = FindProductDuplicate(Id)
     if product == False:
         print("Không tìm thấy sản phẩm ID = ".upper(), Id)
-        print("********************************")
     else:
         print("""Bạn muốn cập nhật mục nào ? :
         0. Thoát.
@@ -107,65 +106,64 @@ def UpdateProduct():
         5. Số lượng.
         6. Năm xuất bản.
         7. Tình trạng """)
-        action = 0
-        while action >= 0:
-            if action == 1:
-                UpdateProductName()
-            elif action == 2:
-                UpdateProductBrand()
-            elif action == 3:
-                UpdateProductPrice()
-            elif action == 4:
-                UpdateProductSize()
-            elif action == 5:
-                UpdateProductQuatity()
-            elif action == 6:
-                UpdateProductYear()
-            elif action == 7:
-                UpdateStatus()
+    action = 0
+    while action >= 0:
+        if action == 1:
+            UpdateProductName()
+        elif action == 2:
+            UpdateProductBrand()
+        elif action == 3:
+            UpdateProductPrice()
+        elif action == 4:
+            UpdateProductSize()
+        elif action == 5:
+            UpdateProductQuatity()
+        elif action == 6:
+            UpdateProductYear()
+        elif action == 7:
+            UpdateStatus()
 
-            def UpdateProductName():
-                print("Nhập tên cập nhật của sản phẩm: ")
-                name_product = input()
-                product[1]['Product_name'] = name_product
+        def UpdateProductName():
+            print("Nhập tên cập nhật của sản phẩm: ")
+            name_product = input()
+            product[1]['Product_name'] = name_product
 
-            def UpdateProductBrand():
-                print("Nhập thương hiệu muốn cập nhật: ")
-                name_product = input()
-                product[1]['Brand'] = name_product
+        def UpdateProductBrand():
+            print("Nhập thương hiệu muốn cập nhật: ")
+            name_product = input()
+            product[1]['Brand'] = name_product
 
-            def UpdateProductPrice():
-                print("Nhập giá muốn cập nhật: ")
-                name_product = float(input())
-                product[1]['Price'] = name_product
+        def UpdateProductPrice():
+            print("Nhập giá muốn cập nhật: ")
+            name_product = float(input())
+            product[1]['Price'] = name_product
 
-            def UpdateProductSize():
-                print("Nhập size muốn cập nhật: ")
-                name_product = input()
-                product[1]['Size'] = name_product
+        def UpdateProductSize():
+            print("Nhập size muốn cập nhật: ")
+            name_product = input()
+            product[1]['Size'] = name_product
 
-            def UpdateProductYear():
-                print("Nhập năm sản xuất muốn cập nhật: ")
-                name_product = int(input())
-                product[1]['Year'] = name_product
-                list_product.list_product[product[0]] = product[1]
+        def UpdateProductYear():
+            print("Nhập năm sản xuất muốn cập nhật: ")
+            name_product = int(input())
+            product[1]['Year'] = name_product
+            list_product.list_product[product[0]] = product[1]
 
-            def UpdateProductQuatity():
-                print("Nhập số lượng muốn cập nhật: ")
-                name_product = int(input())
-                product[1]['Quantity'] = name_product
-                list_product.list_product[product[0]] = product[1]
+        def UpdateProductQuatity():
+            print("Nhập số lượng muốn cập nhật: ")
+            name_product = int(input())
+            product[1]['Quantity'] = name_product
+            list_product.list_product[product[0]] = product[1]
 
-            def UpdateStatus():
-                print("Nhập tình trạng muốn cập nhật: ")
-                name_product = input()
-                product[1]['Status'] = name_product
-                list_product.list_product[product[0]] = product[1]
-            action = int(input("Bạn chọn mục cập nhật nào? "))
-            if action == 0:
-                print("Không cập nhật mục nào".upper())
-                print("********************************")
-                break
+        def UpdateStatus():
+            print("Nhập tình trạng muốn cập nhật: ")
+            name_product = input()
+            product[1]['Status'] = name_product
+            list_product.list_product[product[0]] = product[1]
+        action = int(input("Bạn chọn mục cập nhật nào? "))
+        if action == 0:
+            print("Không cập nhật mục nào".upper())
+            break
 
 # Xóa sản phẩm
 def DeleteProduct():
@@ -175,17 +173,14 @@ def DeleteProduct():
     product = FindProductDuplicate(Id)
     if product == False:
         print("Không tìm thấy sản phẩm ID = ".upper(), Id)
-        print("********************************")
     else:
         answer = input("Bạn có muốn xóa sản phẩm này không? Y/N ".upper())
         if answer == "y" or answer == "Y":
             if product != False:
                 list_product.list_product.remove(product[1])
-                print("Xóa sản phẩm thành công!".upper())   
-                print("********************************")
+                print("Xóa sản phẩm thành công!".upper())          
         else:
             print("Đã từ chối xóa sản phẩm này!".upper())
-            print("********************************")
         
 
 
@@ -194,7 +189,6 @@ def FindProductByName():
     print("*** TÌM KIẾM SẢN PHẨM ***")
     if (len(list_product.list_product) == 0 or len(list_product.list_product) < 0):
         print("Chưa có sản phẩm nào trong giỏ!".upper())
-        print("********************************")
     else:
         NameProduct = str(
             input("Nhập tên sản phẩm hoặc tên thương hiệu bạn muốn tìm kiếm: ")).upper()
@@ -202,21 +196,20 @@ def FindProductByName():
         for i in range(0, len(list_product.list_product)):
             if str(list_product.list_product[i]['Product_name']).upper() in NameProduct or str(list_product.list_product[i]['Brand']).upper() in NameProduct:   
                 is_found = True
-                print("ID           : \t", list_product.list_product[i]['Id']),
-                print("Mã sản phẩm  : \t",
+                print("ID: ", list_product.list_product[i]['Id']),
+                print("Mã sản phẩm: ",
                     list_product.list_product[i]['Product_code']),
-                print("Tên sản phẩm : \t",
+                print("Tên sản phẩm: ",
                     list_product.list_product[i]['Product_name']),
-                print("Thương hiệu  : \t", list_product.list_product[i]['Brand']),
-                print("Giá          : \t", list_product.list_product[i]['Price']),
-                print("Năm xuất bản : \t", list_product.list_product[i]['Year']),
-                print("Số lượng     : \t", list_product.list_product[i]['Quantity']),
-                print("Size giày    : \t", list_product.list_product[i]['Size'])
-                print("Tình trạng   : \t", list_product.list_product[i]['Status'])
+                print("Thương hiệu: ", list_product.list_product[i]['Brand']),
+                print("Giá: ", list_product.list_product[i]['Price']),
+                print("Năm xuất bản: ", list_product.list_product[i]['Year']),
+                print("Số lượng: ", list_product.list_product[i]['Quantity']),
+                print("Size giày: ", list_product.list_product[i]['Size'])
+                print("Tình trạng: ", list_product.list_product[i]['Status'])
                 print("________________________________")
         if not is_found:
             print("Không tìm thấy sản phẩm này @@".upper())
-            print("********************************")
         
 def SortProductNameA_Z():
         list_product.list_product.sort(key=lambda item: item.get("Product_name"))  

@@ -16,19 +16,17 @@ while action >= 0:
     elif action == 6:       
         p.SortProductNameA_Z()
         print("Đã sắp xếp thành công! Vui lòng chọn số 4 để xem kết quả".upper())
-        print("********************************")
+        print("________________________________")
     elif action == 7:       
         p.SortProductNameZ_A()
         print("Đã sắp xếp thành công! Vui lòng chọn số 4 để xem kết quả".upper())
-        print("********************************")
+        print("________________________________")
     elif action == 8:       
         p.SortPriceAsc()
-        print("Đã sắp xếp thành công! Vui lòng chọn số 4 để xem kết quả".upper())
-        print("********************************")
+        print("Đã sắp xếp thành công! Vui lòng chọn số 4 để xem kết quả")
     elif action == 9:       
         p.SortPriceDesc()
-        print("Đã sắp xếp thành công! Vui lòng chọn số 4 để xem kết quả".upper())
-        print("********************************")
+        print("Đã sắp xếp thành công! Vui lòng chọn số 4 để xem kết quả")
 
     print("Vui lòng chọn chức năng bạn muốn: ")
     print("0. Thoát khỏi chương trình. ")

@@ -181,11 +181,9 @@ def DeleteProduct():
         if answer == "y" or answer == "Y":
             if product != False:
                 list_product.list_product.remove(product[1])
-                print("Xóa sản phẩm thành công!".upper())   
-                print("********************************")
+                print("Xóa sản phẩm thành công!".upper())          
         else:
             print("Đã từ chối xóa sản phẩm này!".upper())
-            print("********************************")
         
 
 
@@ -216,7 +214,6 @@ def FindProductByName():
                 print("________________________________")
         if not is_found:
             print("Không tìm thấy sản phẩm này @@".upper())
-            print("********************************")
         
 def SortProductNameA_Z():
         list_product.list_product.sort(key=lambda item: item.get("Product_name"))  

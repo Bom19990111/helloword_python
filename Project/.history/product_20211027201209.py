@@ -96,7 +96,6 @@ def UpdateProduct():
     product = FindProductDuplicate(Id)
     if product == False:
         print("Không tìm thấy sản phẩm ID = ".upper(), Id)
-        print("********************************")
     else:
         print("""Bạn muốn cập nhật mục nào ? :
         0. Thoát.
@@ -175,17 +174,14 @@ def DeleteProduct():
     product = FindProductDuplicate(Id)
     if product == False:
         print("Không tìm thấy sản phẩm ID = ".upper(), Id)
-        print("********************************")
     else:
         answer = input("Bạn có muốn xóa sản phẩm này không? Y/N ".upper())
         if answer == "y" or answer == "Y":
             if product != False:
                 list_product.list_product.remove(product[1])
-                print("Xóa sản phẩm thành công!".upper())   
-                print("********************************")
+                print("Xóa sản phẩm thành công!".upper())          
         else:
             print("Đã từ chối xóa sản phẩm này!".upper())
-            print("********************************")
         
 
 
@@ -194,7 +190,6 @@ def FindProductByName():
     print("*** TÌM KIẾM SẢN PHẨM ***")
     if (len(list_product.list_product) == 0 or len(list_product.list_product) < 0):
         print("Chưa có sản phẩm nào trong giỏ!".upper())
-        print("********************************")
     else:
         NameProduct = str(
             input("Nhập tên sản phẩm hoặc tên thương hiệu bạn muốn tìm kiếm: ")).upper()
@@ -216,7 +211,6 @@ def FindProductByName():
                 print("________________________________")
         if not is_found:
             print("Không tìm thấy sản phẩm này @@".upper())
-            print("********************************")
         
 def SortProductNameA_Z():
         list_product.list_product.sort(key=lambda item: item.get("Product_name"))  

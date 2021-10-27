@@ -182,7 +182,7 @@ def DeleteProduct():
             if product != False:
                 list_product.list_product.remove(product[1])
                 print("Xóa sản phẩm thành công!".upper())   
-                print("********************************")
+                print("********************************")       
         else:
             print("Đã từ chối xóa sản phẩm này!".upper())
             print("********************************")

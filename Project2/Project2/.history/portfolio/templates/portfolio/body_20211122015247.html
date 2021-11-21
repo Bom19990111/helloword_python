@@ -1,0 +1,19 @@
+{% block content %}
+<div class="bg-light">
+    <div class="container py-5">
+        <div class="row h-100 align-items-center py-5">
+            <div class="col-lg-6">
+                <h1 class="display-4">
+                    <p class="line-1 anim-typewriter">Trần Nhật Thịnh</p>
+                </h1>
+                <p class="lead text-muted mb-0">Sinh viên năm 3 ngành công nghệ thông tin trường đại học Phú Xuân.</p>
+                <button class="btn btn-primary">Xem thêm về t</button>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                 {% load static %}
+                <img width="350" height="350" src="{% static 'image/anh.jpg'%}" alt="Ảnh đại diện" class="img-responsive"/>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

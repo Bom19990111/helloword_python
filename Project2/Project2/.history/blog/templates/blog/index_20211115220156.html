@@ -1,0 +1,48 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <!-- Blog Entries Column -->
+        <div class="col-md-8 mt-3 left">
+            {% for blog in page_obj %}
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title title-href">{{ blog.title }}</h3>
+                    <p class="card-text text-muted">{{ blog.author }} | {{ blog.created_on|date:'Y-m-d H:m:s'}} </p>
+                    <p class="card-text">{{blog.content|slice:":213"|safe}}...</p>
+                    <a style="font-weight:500" href="{% url 'blog:detail' blog.slug %}"
+                        class="btn btn-read text-light">Xem thêm &rarr;</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% block sidebar %}
+        {% include 'blog/sidebar.html' %}
+        {% endblock sidebar %}
+    </div>
+</div>
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+<div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+       
+        <a href="?page={{ page_obj.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+</div>
+{% endblock %}

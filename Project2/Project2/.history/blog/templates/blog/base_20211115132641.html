@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light" id="mainNav" style="display:flex">
+        <div class="container-fluid">
+            <a class="title text-dark text-center" href="{% url 'blog:all_blogs' %}">
+                <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                <lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="hover"
+                    colors="primary:#121331,secondary:#08a88a" style="width:40px;height:40px">
+                </lord-icon><span>Chào mừng đã đến với Blog của Thịnh</span>
+            </a>
+        </div>
+    </nav>
+    {% block content %}
+
+    {% endblock %}
+    <!-- Footer -->
+    <div class="footer bg-light container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <p style="color: #FF9A8B;
+display:inline;
+font-size:15px;
+font-weight:700;
+line-height:18.75px;
+text-transform:uppercase;"> Mọi thông tin liên hệ với tôi qua</p>
+                <p> <i class="far fa-envelope"></i> 
+                    phanthituyngoc1995@gmail.com </p>
+                <p> <i class="fab fa-facebook-square"></i>
+                    Trần Thịnh </p>
+                <p> <i class="fab fa-instagram"></i>
+                    thinh.tran.90663894 </p>
+            </div>
+            <div class="col-4">
+                 <p style="color: #FF9A8B;
+display:inline;
+font-size:15px;
+font-weight:700;
+line-height:18.75px;
+text-transform:uppercase;"> Thông tin về tôi</p>
+                <p> <i class="fas fa-search-location"></i>
+                    Thừa Thiên Huế, Việt Nam </p>
+                <p> <i class="fas fa-phone-alt"></i>
+                    0794161220 </p>
+                <p> <i class="fas fa-university"></i>
+                    Sinh viên năm 3 đang học tại ĐH Phú Xuân - Huế </p>
+            </div>
+            <div class="col-4">
+                <p style="color: #FF9A8B;
+display:inline;
+font-size:15px;
+font-weight:700;
+line-height:18.75px;
+text-transform:uppercase;"> Thông điệp tôi muốn gửi cho bạn</p>
+                <p style="text-align:justify;">"Sự khác biệt giữa những người thành công và những người thất bại ko phải
+                    là ở sức mạnh, kiến thức hay sự hiểu biết – mà chính là ở ý chí."
+                </p>                 
+            </div>
+        </div>
+        <div class="col">
+            <h6> Copyright@2021: TranNhatThinh</h6>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{% block sidebar %}
+<style>
+    .card:h {
+        transition: all 0.3s ease-out;
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.3);
+        background-color: white;
+        transform: scale(1.03);
+    }
+</style>
+
+<!-- Sidebar Widgets Column -->
+<div class="col-md-4 float-right ">
+    <div class="card my-4">
+        <h5 class="card-header">About</h5>
+        <div class="card-body">
+            <p class="card-text"> My Blog App is created using Django Web Framework for backend side, designed with
+                bootswatch
+                theme for UI - you can also visit my website ... </p>
+            <a href="https://bekbrace.com" class="btn btn-danger">Visit Website!</a>
+            <a href="https://docs.djangoproject.com/en/3.1/" class="btn btn-secondary">Django Docs</a>
+        </div>
+    </div>
+</div>
+
+{% endblock sidebar %}

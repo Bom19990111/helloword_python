@@ -1,0 +1,78 @@
+html,
+body {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.card:hover {
+    transition: all 0.3s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.3);
+    background-color: white;
+    transform: scale(1.03);
+}
+
+.btn-facebook {
+    align-items: center;
+    background: #ff5f6d;
+    background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    border-radius: 4px;
+    color: #ffffff;
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 31.5px;
+    padding: 0px 15px;
+}
+
+.btn-read {
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    border: none;
+}
+
+.btn-facebook:hover {
+    color: #ffffff;
+}
+
+.footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer p {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.footer h6 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.title {
+    margin-left: 514px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.content {
+    text-align: justify;
+}
+
+.image-profile {
+    width: 220px;
+    margin-left: 93px;
+}
+
+.title-href {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.title-href:hover {
+    color: #2bcbba;
+}

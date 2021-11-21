@@ -1,0 +1,10 @@
+<h1>Blogs</h1>
+
+<h2> There are {{blogs.count}} blogs</h2>
+{% for blog in blogs %}
+<a href="{% url 'blog:detail' blog.slug %}">
+    <h2>{{blog.title}}</h2>
+</a>
+<p>{{blog.created_on|date:'Y-m-d H:m:s'}}</p>
+<p>{{blog.content|truncatechars:100}}</p>
+{% endfor %}

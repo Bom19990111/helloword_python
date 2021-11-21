@@ -1,0 +1,25 @@
+{% block content %}
+<div class="bg-light">
+    <div class="container py-5">
+        <div class="row h-100 align-items-center py-5">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <h1 class="display-4">
+                    <p class="line-1 anim-typewriter">Trần Nhật Thịnh</p>
+                </h1>
+                <p class="lead text-muted mb-0">Xin chào, tôi là Thịnh hay mọi người gọi tôi với cái tên khác Bom, tôi
+                    hiện đang là sinh viên năm cuối ngành công nghệ thông tin tại trường đại học Phú Xuân.</p>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="800">
+                {% load static %}          
+                 <img width="450" height="450" src="{% static 'image/anh.jpg'%}" alt="Ảnh đại diện" class="img-responsive" />
+            </div>
+            <div class="btn_more">
+                <button class="btn-about btn btn-primary">Xem thêm về tôi</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

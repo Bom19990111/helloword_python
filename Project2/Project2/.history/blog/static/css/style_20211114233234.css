@@ -1,0 +1,46 @@
+.footer {
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer p {
+    margin-top: 20px;
+    margin-left: 22px;
+    font-size: 20px;
+}
+
+.footer h6 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.title {
+    margin-left: 580px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.card:hover {
+    transition: all 0.3s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.3);
+    background-color: white;
+    transform: scale(1.03);
+}
+
+.btn-facebook {
+    align-items: center;
+     background: #ff5f6d;
+     background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
+     /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #ff5f6d, #ffc371);
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 4px;
+    color: #ffffff;
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 31.5px;
+    padding: 0px 15px;
+}

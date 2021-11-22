@@ -1,0 +1,175 @@
+{%block content %}
+<div class=" intro container h-auto py-5">
+    <div class="row h-100 py-3">
+        <div class="row">
+            <div class="col-lg-4 img-pro aos-init aos-animate" data-aos="fade-right">
+                {%load static%}
+                <img src="{% static 'image/anh.jpg' %}" class="img-intro" alt="" />
+            </div>
+            <div class="col-lg-8 pt-4 fullname pt-lg-0 content aos-init aos-animate" data-aos="fade-left">
+                <p class="intro-title" style="text-align: justify;">
+                    Xin chào, tôi tên đầy đủ là <b class="name">Trần Nhật Thịnh</b> hay mọi người còn gọi tôi với một
+                    tên khác là
+                    <b class="nickname">Bom</b>. Bom là
+                    tên mà ông nội tôi đã đặt cho tôi vì tôi nghe bố mẹ tôi kể lại nhà nội tôi có cây táo trong vườn mà
+                    người Huế thường gọi là cây bom, khi nào cây ra quả thì nội tôi sẽ hái vào để cắt ăn. Tôi hồi nhỏ
+                    biết gì đâu cứ nghe bố mẹ kể tôi bao nhiêu bom cũng có thể ăn được. Thấy tôi thích ăn bom như vậy
+                    nên ông tôi đặt tên tôi ở nhà là Bom.
+                </p>
+                <div class="row">
+                    <div class="col-lg-6 info-yourself">
+                        <ul>
+                            <li>
+                                <ion-icon name="calendar-outline"></ion-icon>
+                                <strong>
+                                    Ngày sinh:
+                                </strong> <span>16/12/2000</span>
+                            </li>
+                            <li>
+                                <ion-icon name="phone-portrait-outline"></ion-icon>
+                                <strong>Số điện thoại:</strong> <span>+84 0794161220</span>
+                            </li>
+                            <li>
+                                <ion-icon name="location-outline"></ion-icon>
+                                <strong>Quê quán: </strong>
+                                <span>Thừa Thiên Huế</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 info-yourself">
+                        <ul>
+                            <li>
+                                <ion-icon name="body-outline"></ion-icon> <strong>Tuổi:</strong>
+                                <span>21</span>
+                            </li>
+                            <li>
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <strong>Email:</strong>
+                                <span>thinhtran.nhat1612@gmail.com</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school"
+                                    width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#000000"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
+                                    <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
+                                </svg>
+                                <strong>Đang học tập tại:</strong> <span><b class="name2"><a
+                                            href="https://phuxuan.edu.vn/">Đại học Phú Xuân</a></b></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="description" style="text-align: justify;">
+                    Tôi là một người thích có thêm nhiều người bạn mới, vì vậy đừng ngần ngại gửi lời mới kết bạn <b
+                        class="name1"><a href="https://www.facebook.com/thinh.tran.90663894">Facebook</a></b> đến cho
+                    tôi nhé, biết đâu
+                    chúng ta hợp nhau
+                    thì sao!
+                </p>
+            </div>
+        </div>
+        <div class="university" style="margin-top: 50px;">
+            <h2 data-aos="fade-up" data-aos-duration="1000">SỞ THÍCH RIÊNG CỦA TÔI
+                <center>
+                    <hr>
+                </center>
+            </h2>
+        </div>
+        <div class="row h-auto align-items-center">
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-left" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/5.jpg'%}" class="img-university1" />
+                <p class="title-image">Set up góc làm việc</p>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-up" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/6.jpg'%}" class="img-university1" />
+                <p class="title-image">Thích những món đồ công nghệ</p>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-down" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/7.jpg'%}" class="img-university1" />
+                <p class="title-image">Cà phê</p>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-right" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/4.jpg'%}" class="img-university1" />
+                <p class="title-image">Sưu tầm những đôi sneaker</p>
+            </div>
+        </div>
+        <div class="university" style="margin-top: 50px;">
+            <h2 data-aos="fade-zoomup" data-aos-duration="1000">NHỮNG MÔN THỂ THAO TÔI THÍCH
+                <center>
+                    <hr>
+                </center>
+            </h2>
+        </div>
+        <div class="row h-auto align-items-center">
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-right" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/8.jpg'%}" class="img-university1" />
+                <p class="title-image">Đá bóng</p>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-right" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/9.jpg'%}" class="img-university1" />
+                <p class="title-image">Bi - a</p>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-left" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/10.jpg'%}" class="img-university1" />
+                <p class="title-image">Bơi lội</p>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-left" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/11.jpg'%}" class="img-university1" />
+                <p class="title-image">Võ thuật</p>
+            </div>
+        </div>
+        <div class="university" style="margin-top: 50px;">
+            <h2 data-aos="fade-down" data-aos-duration="1000">TÍNH CÁCH CỦA TÔI
+                <center>
+                    <hr>
+                </center>
+            </h2>
+        </div>
+        <div class="row h-auto align-items-center">
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-right" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/8.jpg'%}" class="img-university1" />
+                <p class="title-image">Đá bóng</p>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-right" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/9.jpg'%}" class="img-university1" />
+                <p class="title-image">Bi - a</p>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-left" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/10.jpg'%}" class="img-university1" />
+                <p class="title-image">Bơi lội</p>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-left" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/11.jpg'%}" class="img-university1" />
+                <p class="title-image">Võ thuật</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

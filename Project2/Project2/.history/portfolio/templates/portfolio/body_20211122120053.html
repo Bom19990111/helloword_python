@@ -1,0 +1,163 @@
+{% block content %}
+<div class="container h-auto py-5">
+    <div class="row h-100 align-items-center py-5">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-offset="350" data-aos-easing="ease-in-sine">
+            <h1 class="display-4">
+                <p class="line-1 anim-typewriter">Trần Nhật Thịnh</p>
+            </h1>
+            <p class="lead text-muted mb-0">Xin chào, tôi là Thịnh hay mọi người gọi tôi với cái tên khác Bom, tôi
+                hiện đang là sinh viên năm cuối ngành công nghệ thông tin.</p>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left" data-aos-anchor="#example-anchor"
+            data-aos-offset="650" data-aos-duration="650">
+            {% load static %}
+            <img width="450" height="450" src="{% static 'image/anh.jpg'%}" alt="Ảnh đại diện" class="img-responsive" />
+        </div>
+        <div class="btn_more" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
+            <button class="btn-about btn btn-primary">Xem thêm về tôi</button>
+        </div>
+    </div>
+    <div class="university">
+        <h2 data-aos="fade-up" data-aos-duration="1000">NƠI ĐANG HỌC TẬP
+            <center>
+                <hr>
+            </center>
+        </h2>
+
+        <div class="row h-100 align-items-center py-5">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-offset="350" data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/daihocphuxuan1.png'%}" class="img-university" />
+            </div>
+            <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left" data-aos-offset="350"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/anhtruong.jpg'%}" class="img-university1" />
+            </div>
+        </div>
+        <div class="university" style="margin-top: 100px;">
+            <h2 data-aos="fade-up" data-aos-duration="1000">SỞ THÍCH
+                <center>
+                    <hr>
+                </center>
+            </h2>
+        </div>
+        <div class="row h-auto align-items-center">
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-left" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/1.jpg'%}" class="img-university1" />
+            </div>
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-up" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/2.jpg'%}" class="img-university1" />
+            </div>
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-down" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/3.jpg'%}" class="img-university1" />
+            </div>
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-right" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/4.jpg'%}" class="img-university1" />
+            </div>
+        </div>
+        <div class="university" style="margin-top: 100px;">
+            <h2 data-aos="fade-up" data-aos-duration="1000"> ĐÁNH GIÁ KỸ NĂNG
+                <center>
+                    <hr>
+                </center>
+            </h2>
+        </div>
+        <div class="skill-process">
+            <div class="row h-auto align-items-center">
+                <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left" data-aos-offset="450"
+                    data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <div class="process-html-skill">
+                        <p> HTML, CSS, JS</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar"
+                                style="width: 65%; color: black; font-weight: 600;" aria-valuenow="65" aria-valuemin="0"
+                                aria-valuemax="100">65%</div>
+                        </div><br>
+                    </div>
+                    <div class="process-bootstrap-skill">
+                        <p> Bootstrap</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar"
+                                style="width: 70%; color: black; font-weight: 600;" aria-valuenow="70" aria-valuemin="0"
+                                aria-valuemax="100">70%</div>
+                        </div>
+                    </div><br>
+                    <div class="process-english-skill">
+                        <p> Java</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar"
+                                style="width: 65% ;color: black; font-weight: 600;" aria-valuenow="65" aria-valuemin="0"
+                                aria-valuemax="100">65%</div>
+                        </div>
+                    </div><br>
+                    <div class="process-english-skill">
+                        <p> C#</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar"
+                                style="width: 55% ;color: black; font-weight: 600;" aria-valuenow="55" aria-valuemin="0"
+                                aria-valuemax="100">55%</div>
+                        </div><br>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block" data-aos="fade-right" data-aos-offset="450"
+                    data-aos-duration="800" data-aos-easing="ease-in-sine">
+                    <div class="process-english-skill">
+                        <p> ASP.NET</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar"
+                                style="width: 60% ;color: black; font-weight: 600;" aria-valuenow="60" aria-valuemin="0"
+                                aria-valuemax="100">60%</div>
+                        </div>
+                    </div><br>
+                    <div class="process-english-skill">
+                        <p> SQL Server, MYSQL</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar"
+                                style="width: 65% ;color: black; font-weight: 600;" aria-valuenow="65" aria-valuemin="0"
+                                aria-valuemax="100">65%</div>
+                        </div>
+                    </div><br>
+                    <div class="process-english-skill">
+                        <p> Python</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar"
+                                style="width: 40% ;color: black; font-weight: 600;" aria-valuenow="40"
+                                aria-valutôiin="0" aria-valuenow="100">40%</div>
+                        </div>
+                    </div><br>
+                    <div class="process-english-skill">
+                        <p> Ngoại ngữ( tiếng Anh)</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar"
+                                style="width: 68% ;color: black; font-weight: 600;" aria-valuenow="68"
+                                aria-valutôiin="0" aria-valuenow="100">68%</div>
+                        </div>
+                    </div><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-content">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffffff" fill-opacity="0.8"
+            d="M0,160L80,154.7C160,149,320,139,480,149.3C640,160,800,192,960,186.7C1120,181,1280,139,1360,117.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+        </path>
+    </svg>
+    <h4>MyPortfolio này tôi đã vận dụng những gì học được ở môn django để làm ra trang web này, vì vậy nếu có thiếu
+        sót mong các
+        bạn góp ý cho mình qua mail nhé!. Về chức năng khác mình sẽ phát triển ở sau này để tạo nên trang web hoàn
+        chỉnh và chuyên nghiệp hơn.</h4>
+</div>
+
+</div>
+{% endblock %}

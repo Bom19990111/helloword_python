@@ -1,0 +1,77 @@
+{% block content %}
+<div class="container h-auto py-5">
+    <div class="row h-100 align-items-center py-5">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-offset="350" data-aos-easing="ease-in-sine">
+            <h1 class="display-4">
+                <p class="line-1 anim-typewriter">Trần Nhật Thịnh</p>
+            </h1>
+            <p class="lead text-muted mb-0">Xin chào, tôi là Thịnh hay mọi người gọi tôi với cái tên khác Bom, tôi
+                hiện đang là sinh viên năm cuối ngành công nghệ thông tin.</p>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left" data-aos-anchor="#example-anchor"
+            data-aos-offset="650" data-aos-duration="650">
+            {% load static %}
+            <img width="450" height="450" src="{% static 'image/anh.jpg'%}" alt="Ảnh đại diện" class="img-responsive" />
+        </div>
+        <div class="btn_more" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
+            <button class="btn-about btn btn-primary">Xem thêm về tôi</button>
+        </div>
+    </div>
+    <div class="university">
+        <h2 data-aos="fade-up" data-aos-duration="1000">NƠI ĐANG HỌC TẬP
+            <center>
+                <hr>
+            </center>
+        </h2>
+
+        <div class="row h-100 align-items-center py-5">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-offset="350" data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/daihocphuxuan1.png'%}" class="img-university" />
+            </div>
+            <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left" data-aos-offset="350"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/anhtruong.jpg'%}" class="img-university1" />
+            </div>
+        </div>
+        <div class="university" style="margin-top: 100px;">
+            <h2 data-aos="fade-up" data-aos-duration="1000">SỞ THÍCH
+                <center>
+                    <hr>
+                </center>
+            </h2>
+        </div>
+        <div class="row h-auto align-items-center">
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-left" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/1.jpg'%}" class="img-university1" />
+            </div>
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-up" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/2.jpg'%}" class="img-university1" />
+            </div>
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-down" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/3.jpg'%}" class="img-university1" />
+            </div>
+            <div class="col-lg-3 d-none d-lg-block" data-aos="fade-right" data-aos-offset="450" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
+                {% load static %}
+                <img src="{% static 'img/4.jpg'%}" class="img-university1" />
+            </div>
+        </div>
+          <div class="row h-auto align-items-center">
+              <h2 data-aos="fade-up" data-aos-duration="1000"> kỸ
+                  <center>
+                      <hr>
+                  </center>
+              </h2>
+          </div>
+    </div>
+</div>
+
+{% endblock %}
